@@ -1,7 +1,7 @@
 import React from 'react';
 
 const initialGlobalState = {
-  count: 0,
+  count: "Geen taken voor vandaag",
 };
 
 // Create a Context for the (global) State
@@ -61,10 +61,10 @@ function SomeComponent() {
     });
   }
 
-  return <div onClick={incrementCount}>{count}</div>;
+  return <div>{count}</div>;
 }
 
-export default function GlobalStateComponent() {
+export default function App() {
   // Note: within the Root function we can return any Component (not just SomeComponent, but also a Router for instance)
   return <Global Root={() => <SomeComponent />} />;
 }
