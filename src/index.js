@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@material-ui/core';
 import ReactDOM from 'react-dom';
 import './index.css';
 import GlobalStateComponent from './GlobalState';
@@ -7,6 +8,9 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStateComponent />
+    <Button variant="contained" color="primary">
+      Hello World 
+    </Button>
   </React.StrictMode>,
   document.getElementById('root')
 );
