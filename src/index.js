@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <GlobalStateComponent />
     <Button variant="contained" color="primary">
-      Hello World 
+      Hello World!
     </Button>
   </React.StrictMode>,
   document.getElementById('root')
